@@ -1,0 +1,11 @@
+async(err, user, info)=>{
+  console.log(user);
+  ctx.redirect("/profile");
+})
+
+
+abc=async(err, user, info)=>{
+  useremail=user.emails[0].value;
+  console.log(useremail);
+  return useremail;
+}
